@@ -57,8 +57,4 @@ class Code:
         self.code_set = []
         while len(self.code_set) < self.m_size:    
             self.code_set += [''.join([random.choice(list(self.alphabet)) for i in range(0, self.n_length)])]
-    
-
-if __name__ == '__main__':
-    c = Code(n=4, m=16)
-    c.randomly_fill_set()
+            
